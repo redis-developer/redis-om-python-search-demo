@@ -1,13 +1,13 @@
-from redis_om import HashModel
+from redis_om import (Field, HashModel)
 
 class Adoptable(HashModel):
-    name: str
-    species: str
-    age: int
-    weight: float
-    sex: str
-    fee: float
-    children: str
-    other_animals: str
-    location: str
-    description: str
+    name: str = Field(index=True)
+    species: str = Field(index=True)
+    age: int = Field(index=True)
+    weight: float = Field(index=True)
+    sex: str = Field(index=True)
+    fee: float = Field(index=True)
+    children: str = Field(index=True)
+    other_animals: str = Field(index=True)
+    location: str = Field(index=True)
+    description: str = Field(index=True)

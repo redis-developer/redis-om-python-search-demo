@@ -1,3 +1,4 @@
+from typing import Text
 from redis_om import (Field, HashModel)
 
 class Adoptable(HashModel):
@@ -9,4 +10,4 @@ class Adoptable(HashModel):
     fee: float = Field(index=True)
     children: str = Field(index=True)
     other_animals: str = Field(index=True)
-    description: str = Field(index=True)
+    description: str = Field(index=True, full_text_search=True)

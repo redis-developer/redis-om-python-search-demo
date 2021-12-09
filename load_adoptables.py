@@ -16,7 +16,6 @@ with open('animal_data.csv') as csv_file:
             fee =  animal["fee"],
             children =  animal["children"],
             other_animals =  animal["other_animals"],
-            location =  animal["location"],
             description = animal["description"]
         )
         

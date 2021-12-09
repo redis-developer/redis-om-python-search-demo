@@ -25,8 +25,8 @@ def find_cats_good_with_children():
         (Adoptable.children == "y")
     )
 
-def find_male_dogs_within_radius():
-    print("find_male_dogs_within_radius:")
+def find_male_dogs():
+    print("find_male_dogs:")
     # TODO how to get "@location:[-2.2297829,53.0220219 50 mi]"
     return Adoptable.find(
         (Adoptable.species == "dog") &
@@ -36,4 +36,4 @@ def find_male_dogs_within_radius():
 #show_results(find_by_name())
 #show_results(find_dogs_in_age_range())
 #show_results(find_cats_good_with_children())
-show_results(find_male_dogs_within_radius())
+show_results(find_male_dogs())

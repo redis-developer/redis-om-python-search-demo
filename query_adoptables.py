@@ -27,7 +27,6 @@ def find_cats_good_with_children():
 
 def find_male_dogs():
     print("find_male_dogs:")
-    # TODO how to get "@location:[-2.2297829,53.0220219 50 mi]"
     return Adoptable.find(
         (Adoptable.species == "dog") &
         (Adoptable.sex == "m")

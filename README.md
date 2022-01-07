@@ -36,8 +36,6 @@ $ cd redis-om-python-search-demo
 $ docker-compose up
 ```
 
-**Important:** At the time of writing, there was a [bug](https://github.com/redis/redis-om-python/issues/42) in Redis OM Python that affects the full text search functionality.  I have proposed a fix for this via a [pull request](https://github.com/redis/redis-om-python/pull/43), and to make the "find cats that are good with children" part of this demo work, you'll need to apply my fix to your local copy of the Redis OM Python code.  When the fix has been released, I'll update this README to remove this note!
-
 ## Loading the Data into Redis and Indexing it
 
 Now it's time to load the data into Redis and setup the RediSearch index:

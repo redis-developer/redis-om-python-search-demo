@@ -22,7 +22,7 @@ In this example, we'll use a small data set of dogs and cats that are available 
 To try the code out, you'll want to clone the repo, create a Python virtual environment, install dependencies and start Redis using Docker:
 
 ```bash
-$ git clone https://github.com/simonprickett/redis-om-python-search-demo.git
+$ git clone https://github.com/redis-developer/redis-om-python-search-demo.git
 $ cd redis-om-python-search-demo
 $ python3 -m venv venv
 $ . ./venv/bin/activate

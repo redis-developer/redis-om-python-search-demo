@@ -1,6 +1,6 @@
 # Redis OM Python Search Demo
 
-This repository contains a basic demonstration of the object modeling and search capabilities of the [Redis OM Python client](https://github.com/redis/redis-om-python) for [Redis](https://redis.io).
+This repository contains a basic demonstration of the object modeling and search capabilities of the [Redis OM Python client](https://github.com/redis/redis-om-python) for [Redis](https://redis.io).  Watch a video of me presenting this demo on [YouTube](https://youtu.be/DFNKmbGKa5w?t=410) at a Redis Montly Live event (sign up for these [here](https://meetups.redis.com).
 
 The demo requires you to have [RediSearch](https://oss.redis.com/redisearch/) 2.2 or higher installed on your Redis server.  The easiest way to get this in order to try out the code here is to use the supplied `docker-compose.yml` file, so you'll want to have [Docker Desktop](https://www.docker.com/get-started) installed.  
 

@@ -1,4 +1,3 @@
-from typing import Text
 from redis_om import (Field, HashModel)
 
 class Adoptable(HashModel):

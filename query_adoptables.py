@@ -14,7 +14,7 @@ def find_male_dogs():
     return Adoptable.find(
         (Adoptable.species == "dog") &
         (Adoptable.sex == "m")
-    )
+    ).all()
 
 def find_dogs_in_age_range():
     print("find_dogs_in_age_range:")
@@ -32,10 +32,10 @@ def find_cats_good_with_children():
         (Adoptable.description % "play") &
         ~(Adoptable.description % "anxious") &
         ~(Adoptable.description % "nervous")
-    )
+    ).all()
 
 
-#show_results(find_by_name())
-#show_results(find_male_dogs())
-#show_results(find_dogs_in_age_range())
+show_results(find_by_name())
+show_results(find_male_dogs())
+show_results(find_dogs_in_age_range())
 show_results(find_cats_good_with_children())

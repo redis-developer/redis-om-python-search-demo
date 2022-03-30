@@ -2,9 +2,9 @@
 
 This repository contains a basic demonstration of the object modeling and search capabilities of the [Redis OM Python client](https://github.com/redis/redis-om-python) for [Redis](https://redis.io).  Watch a video of me presenting this demo on [YouTube](https://youtu.be/DFNKmbGKa5w?t=410) at a Redis Montly Live event (sign up for these [here](https://meetups.redis.com).
 
-The demo requires you to have [RediSearch](https://oss.redis.com/redisearch/) 2.2 or higher installed on your Redis server.  The easiest way to get this in order to try out the code here is to use the supplied `docker-compose.yml` file, so you'll want to have [Docker Desktop](https://www.docker.com/get-started) installed.  
+The demo requires you to have [RediSearch](https://oss.redis.com/redisearch/) 2.2 or higher installed on your Redis server.  The easiest way to get this in order to try out the code here is to use the supplied `docker-compose.yml` file, so you'll want to have [Docker Desktop](https://www.docker.com/get-started) installed.  This uses the [Redis Stack](https://hub.docker.com/r/redis/redis-stack) container, which gives you Redis plus the RediSearch and other modules pre-installed.
 
-You'll also require a reasonably up to date version of Python 3 - I think you need 3.8 or better.  I've tested this on the following version of Python on macOS Big Sur 11.6.1:
+You'll also require a reasonably up to date version of Python 3 - 3.8 or better.  I've tested this on the following version of Python on macOS Big Sur 11.6.1:
 
 ```bash
 $ python3 --version
@@ -29,11 +29,10 @@ $ . ./venv/bin/activate
 $ pip install -r requirements.txt
 ```
 
-Then, in a second terminal:
+Then, start the Redis Stack container:
 
 ```bash
-$ cd redis-om-python-search-demo
-$ docker-compose up
+$ docker-compose up -d
 ```
 
 ## Loading the Data into Redis and Indexing it

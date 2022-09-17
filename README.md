@@ -4,7 +4,7 @@ This repository contains a basic demonstration of the object modeling and search
 
 The demo requires you to have [RediSearch](https://oss.redis.com/redisearch/) 2.2 or higher installed on your Redis server.  The easiest way to get this in order to try out the code here is to use the supplied `docker-compose.yml` file, so you'll want to have [Docker Desktop](https://www.docker.com/get-started) installed.  This uses the [Redis Stack](https://hub.docker.com/r/redis/redis-stack) container, which gives you Redis plus the RediSearch and other modules pre-installed.
 
-You'll also require a reasonably up to date version of Python 3 - 3.8 or better.  I've tested this on the following version of Python on macOS Monterey 12.3.1:
+You'll also require a reasonably up to date version of Python 3 - 3.8 or better.  I've tested this on the following version of Python on macOS Monterey 12.5.1:
 
 ```bash
 $ python3 --version

@@ -36,6 +36,11 @@ Gitpod will then open a workspace in the browser for you.  This contains:
 * An embedded browser window with the [RedisInsight](https://redis.com/redis-enterprise/redis-insight/) database visualization tool running in it.
 * A terminal session -- this is where you'll run the Python scripts to load the sample data and query it.  Note that this terminal will only become available once you have agreed to the terms and conditions to use RedisInsight in the browser window.
 
+Your environment should look something like this:
+
+![GitPod environment screenshot](gitpod_example_screenshot.png)
+
+
 ## Local Setup
 
 (Skip this section if you're using a GitPod hosted environment)

@@ -6,17 +6,12 @@ tasks:
   - name: Start Redis Stack
     init: |
      docker-compose pull
+     pip install -r requirements.txt
     command: |
      docker-compose up -d
      gp sync-done finished
     openMode: split-left
-  - name: Prepare application
-    init: |
-      pip install -r requirements.txt
-    command: |
-      gp sync-await finished
-    openMode: split-right
-
+    
 vscode:
   extensions:
     - ms-python.python

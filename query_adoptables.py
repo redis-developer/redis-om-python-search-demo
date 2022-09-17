@@ -36,6 +36,6 @@ def find_cats_good_with_children():
 
 
 show_results(find_by_name())
-show_results(find_male_dogs())
-show_results(find_dogs_in_age_range())
-show_results(find_cats_good_with_children())
+#show_results(find_male_dogs())
+#show_results(find_dogs_in_age_range())
+#show_results(find_cats_good_with_children())
